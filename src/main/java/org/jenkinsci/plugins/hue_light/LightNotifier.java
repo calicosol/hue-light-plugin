@@ -93,8 +93,8 @@ public class LightNotifier extends Notifier {
         this.lightController = new LightController(descriptor, listener.getLogger());
         
         for(String id : this.lightId) {
-	        Light light = this.lightController.getLightForId(id);
-	        this.lightController.setPulseBreathe(light, "Build Starting", ConfigColorToHue(this.preBuild));
+	        //Light light = this.lightController.getLightForId(id);
+	        //this.lightController.setPulseBreathe(light, "Build Starting", ConfigColorToHue(this.preBuild));
         }
         return super.prebuild(build, listener);
     }
